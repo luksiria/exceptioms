@@ -20,7 +20,7 @@ public class RepoTest {
         Product[] expected = {product1, product2};
 
         Assertions.assertArrayEquals(expected, actual);
-            }
+    }
 
     @Test
     public void RemoveProductNotInList() {
@@ -34,7 +34,7 @@ public class RepoTest {
         repo.add(product3);
 
         Assertions.assertThrows(NotFoundException.class,
-        () -> repo.remove(12)
+                () -> repo.remove(12)
         );
     }
 }
